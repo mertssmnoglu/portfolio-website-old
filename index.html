@@ -8,12 +8,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./style.css">
     <script src="./main.js" type="application/javascript"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/1ec61dfede.js" crossorigin="anonymous"></script>
-    <title>Portfolio Website</title>
 </head>
+<script>
+    $(document).ready(function () {
+        document.title = $("h2").text() ? `${$("h1").text()} - ${$("h2").text()}` : $("h1").text()
+    });
+</script>
 
 <body>
+    <div id="heading">
+        <h1>My Portfolio</h1>
+    </div>
+    <br>
+    <div class="card">
+        <img class="avatar" src="./assets/avatar2.png" alt="Avatar">
+        <br>
+        <div class="container">
+            <h4 class="center"><b>Null Null</b></h4>
+            <p class="center">Student - Web Developer</p>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="links-l">
+            <ul>
+                <li><a class="a_2" href="https://linkedin/in/null"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                <li><a class="a_2" href="https://github.com/null"><i class="fab fa-github"></i> GitHub</a></li>
+                <li><a class="a_2" href="https://instagram.com/null"><i class="fab fa-instagram"></i> Instagram</a></li>
+            </ul>
+        </div>
+        <div class="links-r">
+            <ul>
+                <li><a class="a_2" href="./index.html">Home</a></li>
+                <li><a class="a_2" href="./about.html">About Me</a></li>
+                <li><a class="a_2" href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div>
+            <br>
+            <br>
+            <p class="footer_Text">© 2021- <a class="a_1" href="https://mertsismanoglu.com">Mert Şişmanoğlu</a> All Rights Reserved
+            </p>
+        </div>
+    </div>
 </body>
-
 </html>
