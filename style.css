@@ -85,17 +85,39 @@ li {
     padding: 7px;
 }
 
+.banner {
+    background: gray;
+    padding: 3px;
+    border-radius: 4px;
+}
+
+.banner_content {
+    padding: 6px;
+    display: flex;
+    text-align: center;
+}
+
+.banner_text {
+    flex-grow: 1;
+    line-height: 1.4;
+    color: #ffffff;
+}
+
 @media screen and (max-width: 600px) {
-    .card{
+    .card {
         padding: 10px;
         margin: 0 auto;
         float: none;
         border-radius: 10px;
     }
-    .footer,li{
+
+    .footer,
+    li {
         padding: 0;
     }
-    .links-l,.links-r{
+
+    .links-l,
+    .links-r {
         display: none;
     }
 }
